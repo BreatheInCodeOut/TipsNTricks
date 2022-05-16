@@ -1,0 +1,68 @@
+<HTML>
+    <head>
+        <style>
+            /* Universal selector */
+            * {
+                font-family: 'Courier New', Courier, monospace;
+                background-color: black;
+            }
+            /* Type selector */
+            ul {
+                font-weight: bold;
+                color:aqua;
+            }
+            /* Class selector */
+            .clsNormal
+            {
+                font-weight: normal;
+                color:cadetblue;
+            }
+            /* ID selector */
+            #title {
+                color: orangered;
+                font-size: medium;
+                font-weight: bolder;
+                text-decoration: underline;
+            }
+            /* Attribute selector */
+            [symbol]
+            {
+                color: peru;
+                font-weight: bold;
+            }
+            /* Grouping selects all matching */
+            div, h1, b
+            {
+                background-color: purple;
+                color: white;
+                text-align: center;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS</h1>
+        <div>Selectors</div>
+        <span id="title">Types of Selectors</span>
+        <ul>
+            <li>
+                <p class="clsNormal"><span symbol>*</span> - Universal Selector</p>
+            </li>
+            <li>
+                <p class="clsNormal"><span symbol>&lt;tag&gt;</span> - Type Selector</p>
+            </li>
+            <li>
+                <p class="clsNormal"><span symbol>.</span> - Class Selector</p>
+            </li>
+            <li>
+                <p class="clsNormal"><span symbol>#</span> - ID Selector</p>
+            </li>
+            <li>
+                <p class="clsNormal"><span symbol>[attr]</span> - Attribute Selector</p>
+            </li>
+            <li>
+                <p class="clsNormal"><span symbol>,</span> - Grouping Selector</p>
+            </li>
+        </ul>
+    </body>
+</HTML>
