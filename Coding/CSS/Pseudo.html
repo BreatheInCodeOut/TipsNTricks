@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title></title>
+        <style>
+            h1{
+                text-align: center;
+                background-color: darkblue;
+                color: white;
+            }
+            div{
+                text-align:center;
+            }
+            /* PSEUDO Class */
+            h1:hover /*Mouse over*/
+            {
+                color:aqua;
+            }
+
+            button:disabled /*All buttons that are disabled*/
+            {
+                background-color: gray;
+                color: lightgray;
+                cursor: not-allowed;
+            }
+            span:first-child /*Every span element that is the first child of its parent*/
+            {
+                background-color: blueviolet;
+                color: white;
+            }
+
+            /* PSEUDO Elements */
+            p::first-letter /*First letter of each paragraph*/
+            {
+                text-transform: capitalize;
+                font-size: xx-large;
+                color: brown;
+            }
+            p::selection /*When the user selects some text in paragraph*/
+            {
+                background-color: black;
+                color: white;
+            }
+            span::before /*Insert the content before every span*/
+            {
+                content: "[";
+            }
+            span::after /*Insert the content after every span*/
+            {
+                content: "]";
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS</h1>
+        <p>pseudo-classes: A Pseudo-class is used to define a special state of an element.</p>
+        <div>
+            <button disabled>Subscribe to Read More...</button>
+        </div>
+        <nav>
+            You might want to see this topics
+            <li>
+                <span>Selectors</span>
+                <span>Commbinators</span>
+            </li>
+            <li>
+                <span>BEM</span>
+                <span>SCSS</span>
+            </li>
+        </nav>
+    </body>
+</html>
