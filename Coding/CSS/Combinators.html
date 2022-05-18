@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>CSS - Combinators</title>
+        <style>
+            /* Descendant Combinator
+            li span - (space) combinator will match all (span) inside (li) */
+            li span
+            {
+                color:chartreuse;
+                font-weight: bold;
+            }
+            /* Child Combinator
+            ul > li - (>) combinator will match all (li) that are nested directly inside (ul) */
+            ul > li
+            {
+                font-weight: bolder;
+                color: aqua;
+            }
+            /* General sibling Combinator
+            i ~ span - (~) combinator will match all (span) that follows (i) and shares the same parent */
+            i ~ span
+            {
+                color:darkblue;
+            }
+            /* Adjacent sibling Combinator
+            i + span - (+) combinator will match (span) that is immediately next to (i) and shares the same parent */
+            i + span
+            {
+                background-color: darkorchid;
+                color: azure;
+            }
+        </style>
+    </head>
+    <body>
+        <span>Types of Combinators</span>
+        <ul>
+            <li>
+                <p>
+                    <span>(space)</span>
+                    <i>-</i>
+                    <span>Descendant </span>
+                    <span>Combinator</span>
+                </p>
+            </li><li>
+                <p>
+                    <span>(&gt;)</span>
+                    <i>-</i>
+                    <span>Child </span>
+                    <span>Combinator</span>
+                </p>
+            </li><li>
+                <p>
+                    <span>(~)</span>
+                    <i>-</i>
+                    <span>Generaal sibling </span>
+                    <span>Combinator</span>
+                </p>
+            </li><li>
+                <p>
+                    <span>(+)</span>
+                    <i>-</i>
+                    <span>Adjacent sibling </span>
+                    <span>Combinator</span>
+                </p>
+            </li>
+        </ul>
+    </body>
+</html>
