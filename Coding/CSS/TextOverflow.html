@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>CSS - Text Overflow</title>
+        <style>
+            .overflow {
+                width:250px;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+            .clip {
+                text-overflow: clip; /*Crops the content*/
+            }
+            .ellipsis {
+                text-overflow: ellipsis; /*Crops the content by appending 3 dots at the cropped point*/
+            }
+        </style>
+    </head>
+    <p>
+        <p class="overflow clip">Sample text content to show how clip works</p>
+        <p class="overflow ellipsis">Sample text content to show how ellipsis works</p>
+    </p>
+</html>
