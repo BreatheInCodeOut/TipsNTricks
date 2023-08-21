@@ -1,0 +1,37 @@
+Ctrl+Space - Selects the column
+
+Shift+Space - Selects the row
+
+Ctrl+Shift+"+" - Add row(s)/column(s) (Select a row/column and then press)
+
+Ctrl + -  > Deletes the selected column(s)/row(s)
+
+Ctrl+5 - Strike through
+
+Alt += Sum column or row values
+
+Alt+H+[BA/BN...] - All Borders/No Borders
+
+Alt+H+BN - No Borders
+
+Alt+H+[AC/AT/AM...] - Align Center/Align Top/Align Middle
+
+Alt+H+MC - Merge Center
+
+Alt+H then H+N - No Fill (removes the cell background color)
+
+Alt+A+T - Filter Columns
+
+Alt+A+C - Clear Filter Values
+
+Alt+A+SA - Sort Ascending
+
+Alt+A+SD - Sort Descending
+
+Ctrl+V then Ctrl then V/F - To paste values/Formulas only
+
+Ctrl+Shift+" (or) Ctrl+D - Copt top cell contents to current cell
+
+Ctrl+; - Insert Current Date
+
+Ctrl + Shift +: - Insert Current Time

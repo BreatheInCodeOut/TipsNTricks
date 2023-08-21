@@ -1,0 +1,5 @@
+'Completed Epics/Features
+type = Epic AND component in ("ART_TeamA") 
+AND issuefunction in linkedIssuesOf("Sprint in ('22A.1','22A.2','22A.3','22A.4','22A.5')
+AND status != 'withdrawn' AND status != 'done' AND status != 'accepted' AND status !='readyforuat'",
+"has Epic")

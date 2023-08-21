@@ -1,0 +1,16 @@
+'FILTER
+ - Get multiple matching row values from a column
+
+FILTER(array, include, [if_empty]) 
+    Array > values to return (general report!B:B)
+    Include> condition to match the rows (general report (2)'!A:A=Assignee_Details!A5) Collection of values = value to match
+
+'TRANSPOSE
+- Transpose horizontally or vertically (row to column, or column to row)
+
+Transpose(Range)
+TRANSPOSE(FILTER(general report!B:B, 'general report (2)'!A:A=Assignee_Details!A5,""))
+
+'VLOOKUP
+- Get matching value
+VLOOKUP(LookUpValue, [table array), index, 0/1)

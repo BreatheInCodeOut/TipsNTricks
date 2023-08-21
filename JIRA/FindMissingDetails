@@ -1,0 +1,30 @@
+'Bug/Story Missing DueDate
+component in ("ART_TeamA") 
+AND type in (Bug, Story) AND duedate is EMPTY 
+AND Sprint in ("22A.1") ORDER BY JiraKey ASC
+
+'SubTasks missing Due date in a story
+type in (sub-task, subTaskissueTypes()) 
+AND status != withdrawn 
+AND status != completed 
+AND issueFunction in subtasksOf("Sprint = "22A.1" AND component in (ART_TeamA)") 
+AND (duedate is EMPTY OR duedate < now())
+
+'Vendor Mismatch
+issuetype in (Bug, Story) 
+AND component = "ART_TeamA" 
+AND Sprint in ("22A.1","22A.2","22A.3","22A.4","22A.5") 
+AND (("Vendor" = "CompanyA" 
+AND assignee in (jid1, jid2, jid4)) 
+OR ("Vendor" != "CompanyA" 
+AND assignee not in (jid1, jid2, jid4))) AND assignee not in (jidQE1, jidQE2) AND status != withdrawn
+
+'Missing Epic/Feature
+component in ("ART_TeamA") 
+AND type in (Bug, Story) 
+AND ("Epic Link" is EMPTY OR "Feature" is EMPTY) 
+AND Sprint in ("22A.1","22A.2","22A.3","22A.4","22A.5")
+
+'Missing FixVersion
+component in ("ART_TeamA") AND type in (Bug, Story) AND fixVersion is EMPTY 
+AND Sprint in ("22A.1","22A.2","22A.3","22A.4","22A.5")

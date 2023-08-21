@@ -1,0 +1,2 @@
+'Append this condition to get sum of StoryPoints along with the query results
+AND issueFunction in aggregateExpression(StoryPoints, "StoryPoints.sum()")

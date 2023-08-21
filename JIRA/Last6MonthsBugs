@@ -1,0 +1,4 @@
+'Last 6 months production bug
+issuetype = Bug AND component in ("ART_TeamA", "ART_TeamB", "ART_TeamC")
+and createdDate > startOfDay(-180d) and status != WITHDRAWN and "Environment" = Production
+

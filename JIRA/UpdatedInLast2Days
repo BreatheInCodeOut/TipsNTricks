@@ -1,0 +1,2 @@
+'UpdatedBY Past2Days
+issuekey in updatedBy(jiraId1,-2d) ORDER BY updated DESC

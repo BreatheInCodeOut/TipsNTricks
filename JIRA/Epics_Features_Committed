@@ -1,0 +1,6 @@
+'Epics(s)/Feature(s) committed for the iteration
+'This finds the ones committed for 1st iteration
+component in ('ART_TeamA')
+AND type Epic AND issueFunction in linkedIssuesOf("Sprint in ('22A.1')", "has Epic") 
+AND issuefunction not in linkedissues Of("Sprint in ('22A.2','22A.3','22A.4','22A.5') 
+AND status = 'withdrawn ", "has Epic")

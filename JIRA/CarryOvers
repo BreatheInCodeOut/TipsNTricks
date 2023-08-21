@@ -1,0 +1,4 @@
+'Tag the labels with required carry over tags to fetch using queries
+component in ("22A_ART_TeamA_Features") 
+AND type in (Bug, Story) 
+AND labels in ("CO_22A.1>CO_22A.2")

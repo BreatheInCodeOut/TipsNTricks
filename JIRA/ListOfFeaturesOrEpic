@@ -1,0 +1,14 @@
+'This gets the list of epics tagged to the agile scrum team: 22A_ART_TeamA_Features
+component in ("ART_TeamA") AND type = Epic 
+AND issuefunction in 
+linkedIssuesOf("component in ('ART_TeamA') and Sprint in ('22A.1','22A.2','22A.3','22A.4','22A.5') 
+                AND status != 'withdrawn'", "has Epic")
+
+'This gets all the stories tagged to the agile scrum team's epics/features
+issuefunction in issuesInEpics("filter = '22A_ART_TeamA_Features'")
+
+'All_stories_Bugs along with other team epic stories tagged to the agile team
+(issuefunction in issuesInEpics("filter = '22A_ART_TeamA_Features'") 
+ OR component in ("ART_TeamA")) 
+AND type in (Bug, Story) AND Sprint in ("22A.1","22A.2","22A.3","22A.4","22A.5") 
+AND status != withdrawn

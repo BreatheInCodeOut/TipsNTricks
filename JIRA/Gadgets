@@ -1,0 +1,13 @@
+'Two Dimensional Filter Statistics
+
+'Favorite Filters
+- Lists the filters that are marked as favorite with the count of results for each filter
+
+'Filter Results Gadget
+- Choose list of columns that are required
+- This can be used to show all the sub tasks associated to a story
+
+'Links Hierarchy - Dependency Table
+- Customized way to look fields in column vs row and the links between them
+
+
