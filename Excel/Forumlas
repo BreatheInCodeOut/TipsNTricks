@@ -11,6 +11,9 @@ FILTER(array, include, [if_empty])
 Transpose(Range)
 TRANSPOSE(FILTER(general report!B:B, 'general report (2)'!A:A=Assignee_Details!A5,""))
 
+'Convert column values to comma separated cell values
+TEXTJOIN(",", TRUE, TRANSPOSE(A1:A15))
+
 'VLOOKUP
 - Get matching value
 VLOOKUP(LookUpValue, [table array), index, 0/1)
